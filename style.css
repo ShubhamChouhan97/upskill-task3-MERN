@@ -1,0 +1,49 @@
+/* Box-sizing to include padding and border in the element's total width and height */
+* {
+    box-sizing: border-box;
+}
+
+/* Body style to remove any default margin and padding, set background color, and set font family */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    height: 100vh;
+}
+
+/* Container styling with viewport units for spacing */
+.image-container {
+    margin: 10vh 25vw;
+    text-align: center;
+}
+
+/* Image style to make it responsive */
+.image-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Button styling with gradient background and font settings using viewport units */
+.custom-button {
+    width: 40vw;
+    display: block;
+    margin: 0 auto;
+    padding: 2vh 4vw;
+    background: linear-gradient(45deg, #ff7e5f, #feb47b);
+    border: none;
+    border-radius: 1vh;
+    color: white;
+    font-size: 2vh;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.custom-button:hover {
+    background: linear-gradient(45deg, #feb47b, #ff7e5f);
+}
+
+/* Ensuring the body doesn't overflow */
+html, body {
+    overflow: hidden;
+}
